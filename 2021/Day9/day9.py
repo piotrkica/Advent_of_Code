@@ -4,11 +4,7 @@ with open("day9.txt") as file:
 
 size_x = len(lines)
 size_y = len(lines[0])
-arr = [[0 for _ in range(size_y)] for __ in range(size_x)]
-
-for i, line in enumerate(lines):
-    for j, number in enumerate(line):
-        arr[i][j] = int(number)
+arr = [[int(number) for number in line] for line in lines]
 
 sum_val = 0
 for i in range(size_x):
