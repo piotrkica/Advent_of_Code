@@ -42,5 +42,5 @@ function find_missing_seat(seat_codes)
     return seat_ids[length(seat_ids)]
 end
 
-println(find_highest_seat(lines))
-println(find_missing_seat(lines))
+println(find_highest_seat(lines))  # 838
+println(find_missing_seat(lines))  # 714
